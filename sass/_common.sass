@@ -1,0 +1,150 @@
+@import "base"
+* 
+	margin: 0
+	padding: 0 
+	//-webkit-text-size-adjust: none
+html, body 
+	height: 100%
+body
+	font-family: Arial, Tahoma, sans-serif
+	font-weight: normal 
+	font-size: 14px
+	line-height: 1.2
+	//-webkit-transform: translate3d(0,0,0);
+	//-weblit-backface-visibility: hidden;
+// resets
+a img, fieldset 
+	border: none
+a
+	color: #2c2c2c 
+	text-decoration: none
+	&:hover
+
+p
+	line-height: 1.2
+li 
+	list-style: none
+textarea, button, select, input
+	border: none
+	outline: none
+	font-family: Arial, Tahoma, sans-serif
+button 
+	line-height: 1
+	cursor: pointer
+	&::-moz-focus-inner
+		padding: 0
+		border: 0
+table 
+	border-spacing: 0
+	border-collapse: collapse
+// common styles
+.wrap
+	min-height: 100%
+	height: auto !important
+	height: 100%
+	margin: 0 auto -170px
+.wrap__in
+	position: relative
+	width: 1063px
+	margin: 0 auto
+	background: #FFF 
+	z-index: 10 
+.push
+	height: 170px
+	clear: both
+//header
+.header
+	position: relative
+	height: 219px
+	padding: 12px 0 0 206px
+	background: url(../img/header.png) 211px 0 no-repeat
+	+clr 
+.header__logo
+	position: absolute
+	top: 12px
+	left: 0px
+	a
+		display: block
+	i
+		display: block
+		+s(logo)
+.header__call-us
+	float: left
+	padding: 22px 42px 0
+	font-family: Tahoma, sans-serif
+	color: $red
+	font-size: 19px	
+	.advert__2
+		padding-left: 68px
+	.advert__3
+		padding-left: 179px
+.adtert__number
+	padding-top: 7px
+	color: #BBBBBB
+	font-size: 33px			
+.basket
+	position: relative
+	float: right
+	margin: 64px 0 5px
+	min-width: 119px
+	height: 88px
+	background: #e7e7e7
+	&:before
+		content: ""
+		position: absolute
+		top: 32px
+		left: -62px
+		+s(basket)
+.basket__title
+	height: 27px
+	line-height: 27px
+	margin-bottom: 8px
+	text-align: center
+	text-transform: uppercase
+	color: #fff
+	background: #9d2a30 
+	+background-image(linear-gradient(top, #e4676e 0%, #8b1c22 100%))
+.basket__price
+	+clr
+	margin-bottom: 4px
+	.basket__number
+		float: left
+		width: 50%
+		padding: 0 10px
+		+box
+		text-align: right
+		font-size: 18px
+	.basket__text
+		float: left
+		width: 50%
+		+box
+		font-size: 14px
+		color: $red
+
+// top-menu
+.menu
+	clear: both
+.main-menu
+	height: 26px
+	margin-bottom: 3px
+	background: #dadada 
+	+background-image(linear-gradient(top, #faf9f9 0%, #bebdbd 100%))
+	li
+		float: left
+		border-right: 3px solid #9d1d2e
+		a
+			display: block
+			padding: 0 33px
+			line-height: 26px
+			text-transform: uppercase
+			font-size: 15px
+			color: #555	
+.sub-menu
+	height: 26px
+	background: #87888a 
+		
+
+
+
+
+
