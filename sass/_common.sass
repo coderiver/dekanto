@@ -52,10 +52,18 @@ table
 .push
 	height: 170px
 	clear: both
+.h1
+	margin: 20px 0
+	font: italic 24px Times New Roman, sans-serif
+	color: $red	
+.h2
+	font: 14px normal Tahoma, sans-serif
+	color: $red
+	text-transform: uppercase
+	text-decoration: underline	
 //header
 .header
 	position: relative
-	height: 219px
 	padding: 12px 0 0 206px
 	background: url(../img/header.png) 211px 0 no-repeat
 	+clr 
@@ -201,5 +209,105 @@ table
 	font-size: 20px
 	.quote__mod 
 		padding-left: 94px
+		
+// independent blocks
+.l-container
+	+clr
+.sidebar
+	float: left
+	width: 185px
+	margin-right: 21px
+.l-content
+	float: left
+	width: 857px
+	padding-top: 7px
+	+box-shadow(8px -3px 30px -3px #cccccc)			
+.sidebar__menu
+	margin-bottom: 22px
+	li
+		margin-bottom: 10px
+		a
+			display: block
+			height: 26px
+			padding: 0 22px
+			line-height: 26px
+			text-transform: uppercase
+			font-size: 15px
+			color: $red
+			background: #dadada 
+			+background-image(linear-gradient(top, #faf9f9 0%, #bebdbd 100%))
+.l-search
+	position: relative
+.search
+	height: 26px
+	+box
+	width: 100%
+	padding: 0 10px
+	border: 1px solid $red
+	+border-radius(0 3px 3px 0)
+.search-btn
+	position: absolute
+	top: 0
+	bottom: 0
+	right: 0
+	width: 28px
+	+border-radius(0 3px 3px 0)
+	background: #a83632 
+	+background-image(linear-gradient(top, #cb4e4a 0%, #85211a 100%))
+	cursor: pointer
+	&:after
+		content: ""
+		position: absolute
+		top: 6px
+		lefT: 8px
+		+s(search)
+.sidebar__article-list
+	+box-shadow(inset -8px -3px 30px -3px #cccccc)
+.sidebar__article
+	+box
+	border: 2px dashed #6b6f72
+	margin-bottom: 14px
+	img
+		width: 181px
+		height: 122px
+	p
+		padding: 0 8px
+		font: 10px Tahoma, sans-serif	
+.sidebar__article-title
+	display: block
+	padding: 0 0 8px 8px
+	font: italic 18px Times New Roman, sans-serif
+	color: $red
+.more
+	display: block
+	margin: 17px 0 20px
+	font: italic 10px Times New Roman, sans-serif
+	color: $red
+	&:hover
+		text-decoration: underline
+.more_mod
+	padding: 0 8px		
+.navigation
+	+clr
+	padding: 0 0 0 10px
+	margin-bottom: 10px
+.navigation__map
+	float: left	
+	li
+		display: inline-block
+		padding: 0 15px
+		border-left: 2px solid #777
+		&:first-child
+			border-left: none
+		a
+			font: "Tahoma", sans-serif
+			color: $red
+		a.current
+			color: #929191		
+.navigation__pages
+	float: right				
+
+		
+		
 
 
