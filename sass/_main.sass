@@ -5,10 +5,68 @@
 	margin-left: 25px
 .new__col
 	width: 50%
-	float: left	
-.new__about
+	float: left
+	+clr	
+.wine-about
 	font-size: 10px
 .new__text
 	font: 14px Tahoma, sans-serif
-.new__kind
-	margin-top: 20px
+.wine-about__kind
+	margin-top: 10px
+.new__img
+	position: relative
+	float: right
+	p
+		padding: 0 10px 0 43px
+		font: italic 12px 'Times New Poman', sans-serif
+		color: #87888a
+.new__wine
+	position: absolute
+	top: 10px
+	left: -61px
+.best-sell
+	.h2
+		margin-left: 24px
+.best-sell__row
+	margin-top: 7px
+	padding-top: 34px
+	border-top: 2px dotted #6b6f72
+	+clr
+.best-sell__row_top
+	padding-top: 7px						
+.bestseller
+	position: relative
+	width: 33.3%
+	float: left
+	padding: 16px 8px 8px 88px
+	+box
+	border-left: 2px dotted #6b6f72
+	&:first-child
+		border-left: none
+.bestseller__link
+	font: italic 18px Times New Poman, sans-serif
+	color: $red
+.bestseller__text
+	font-size: 12px
+.bestseller__img
+	position: absolute
+	top: 56px
+	left: 10px
+	z-index: 2	
+.price
+	position: relative
+	left: -54px
+	height: 27px
+	line-height: 27px
+	padding-right: 34px
+	text-align: right
+	background: #9d2a30 
+	+background-image(linear-gradient(top, #e4676e 0%, #8b1c22 100%))
+	color: #fff
+	font-family: Tahoma, sans-serif
+	&:after
+		content: ""
+		position: absolute
+		top: 2px
+		right: 7px
+		+s(basket-small)

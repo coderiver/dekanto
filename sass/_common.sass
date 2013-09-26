@@ -53,14 +53,18 @@ table
 	height: 170px
 	clear: both
 .h1
-	margin: 20px 0
+	margin: 20px 0 10px
 	font: italic 24px Times New Roman, sans-serif
 	color: $red	
 .h2
 	font: 14px normal Tahoma, sans-serif
 	color: $red
 	text-transform: uppercase
-	text-decoration: underline	
+	text-decoration: underline
+.h3
+	margin: 20px 0 10px
+	font: italic 18px Times New Roman, sans-serif
+	color: $red		
 //header
 .header
 	position: relative
@@ -212,6 +216,7 @@ table
 		
 // independent blocks
 .l-container
+	position: relative
 	+clr
 .sidebar
 	float: left
@@ -221,7 +226,9 @@ table
 	float: left
 	width: 857px
 	padding-top: 7px
-	+box-shadow(8px -3px 30px -3px #cccccc)			
+	+box-shadow(8px -3px 30px -3px #ccc)
+.content
+	margin-bottom: 5px				
 .sidebar__menu
 	margin-bottom: 22px
 	li
@@ -265,7 +272,7 @@ table
 	+box-shadow(inset -8px -3px 30px -3px #cccccc)
 .sidebar__article
 	+box
-	border: 2px dashed #6b6f72
+	border: 2px dotted #6b6f72
 	margin-bottom: 14px
 	img
 		width: 181px
