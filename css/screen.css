@@ -167,6 +167,9 @@ table { border-spacing: 0; border-collapse: collapse; }
 .sidebar__sub-menu { padding: 7px 0 4px 19px; }
 .sidebar__sub-menu li { padding-bottom: 2px; font-size: 12px; color: #7d7d7d; text-transform: none; font-family: "Tahoma", sans-serif; cursor: pointer; }
 .sidebar__sub-menu li:hover { color: #9d1c2f; }
+.sidebar__sub-menu li span.is-active { color: #9d1c2f; text-decoration: underline; }
+
+.sidebar__l2-menu { padding-left: 10px; }
 
 .new { margin-left: 25px; }
 .new:before, .new:after { content: ""; display: table; }
