@@ -347,7 +347,7 @@ table
 	li
 		float: left
 		line-height: 18px
-		font: "Tahoma", sans-serif
+		font-family: "Tahoma", sans-serif
 		font-size: 12px
 		color: #929191
 		span
@@ -367,20 +367,51 @@ table
 .sidebar__menu
 	padding-left: 22px
 	li
-		height: 16px
 		font-size: 13px
-		padding-top: 10px
 		color: $red
 		text-transform: uppercase
-		cursor: pointer
+		p
+			padding-top: 10px
+			cursor: pointer
 	.red-wine
-		border-right: 7px solid #922228
+		p
+			border-right: 7px solid #922228
+	.red-wine.is-active 
+		p
+			border-bottom: 2px solid #922228
+			+box-shadow(0px 4px 4px 0px #ccc)	
 	.white-wine
-		border-right: 7px solid #fce08b
+		p
+			border-right: 7px solid #fce08b
+		p.is-active
+			border-bottom: 2px solid #fce08b
+			+box-shadow(0px 4px 4px 0px #ccc)		
 	.pink-wine
-		border-right: 7px solid #f69793
+		p
+			border-right: 7px solid #f69793
+	.pink-wine.is-active
+		p
+			border-bottom: 2px solid #f69793
+			+box-shadow(0px 4px 4px 0px #ccc)		
 	.champagne
-		border-right: 7px solid #fff6f2							 					
+		p
+			border-right: 7px solid #fff6f2
+	.champagne.is-active
+		p
+			border-bottom: 2px solid #fff6f2
+			+box-shadow(0px 4px 4px 0px #ccc)		
+.sidebar__sub-menu
+	padding: 7px 0 4px 19px
+	li
+		padding-bottom: 2px
+		font-size: 12px
+		color: #7d7d7d
+		text-transform: none
+		font-family: "Tahoma", sans-serif
+		cursor: pointer
+		&:hover
+			color: $red
+
 
 		
 		

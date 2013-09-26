@@ -146,18 +146,27 @@ table { border-spacing: 0; border-collapse: collapse; }
 .navigation__map li a.current { color: #929191; }
 
 .pagination { float: right; margin-left: 25px; }
-.pagination li { float: left; line-height: 18px; font: "Tahoma", sans-serif; font-size: 12px; color: #929191; }
+.pagination li { float: left; line-height: 18px; font-family: "Tahoma", sans-serif; font-size: 12px; color: #929191; }
 .pagination li span { padding-right: 4px; }
 .pagination li a { display: block; height: 18px; padding: 0 5px; -moz-box-sizing: border-box; box-sizing: border-box; font-size: 14px; color: #929191; }
 .pagination li a:hover { color: #9d1c2f; }
 .pagination li a.is-active { background: #9d1d2e; color: white; }
 
 .sidebar__menu { padding-left: 22px; }
-.sidebar__menu li { height: 16px; font-size: 13px; padding-top: 10px; color: #9d1c2f; text-transform: uppercase; cursor: pointer; }
-.sidebar__menu .red-wine { border-right: 7px solid #922228; }
-.sidebar__menu .white-wine { border-right: 7px solid #fce08b; }
-.sidebar__menu .pink-wine { border-right: 7px solid #f69793; }
-.sidebar__menu .champagne { border-right: 7px solid #fff6f2; }
+.sidebar__menu li { font-size: 13px; color: #9d1c2f; text-transform: uppercase; }
+.sidebar__menu li p { padding-top: 10px; cursor: pointer; }
+.sidebar__menu .red-wine p { border-right: 7px solid #922228; }
+.sidebar__menu .red-wine.is-active p { border-bottom: 2px solid #922228; -webkit-box-shadow: 0px 4px 4px 0px #cccccc; -moz-box-shadow: 0px 4px 4px 0px #cccccc; box-shadow: 0px 4px 4px 0px #cccccc; }
+.sidebar__menu .white-wine p { border-right: 7px solid #fce08b; }
+.sidebar__menu .white-wine p.is-active { border-bottom: 2px solid #fce08b; -webkit-box-shadow: 0px 4px 4px 0px #cccccc; -moz-box-shadow: 0px 4px 4px 0px #cccccc; box-shadow: 0px 4px 4px 0px #cccccc; }
+.sidebar__menu .pink-wine p { border-right: 7px solid #f69793; }
+.sidebar__menu .pink-wine.is-active p { border-bottom: 2px solid #f69793; -webkit-box-shadow: 0px 4px 4px 0px #cccccc; -moz-box-shadow: 0px 4px 4px 0px #cccccc; box-shadow: 0px 4px 4px 0px #cccccc; }
+.sidebar__menu .champagne p { border-right: 7px solid #fff6f2; }
+.sidebar__menu .champagne.is-active p { border-bottom: 2px solid #fff6f2; -webkit-box-shadow: 0px 4px 4px 0px #cccccc; -moz-box-shadow: 0px 4px 4px 0px #cccccc; box-shadow: 0px 4px 4px 0px #cccccc; }
+
+.sidebar__sub-menu { padding: 7px 0 4px 19px; }
+.sidebar__sub-menu li { padding-bottom: 2px; font-size: 12px; color: #7d7d7d; text-transform: none; font-family: "Tahoma", sans-serif; cursor: pointer; }
+.sidebar__sub-menu li:hover { color: #9d1c2f; }
 
 .new { margin-left: 25px; }
 .new:before, .new:after { content: ""; display: table; }
