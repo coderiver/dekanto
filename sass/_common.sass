@@ -115,7 +115,7 @@ table
 	text-transform: uppercase
 	color: #fff
 	background: #9d2a30 
-	+background-image(linear-gradient(top, #e4676e 0%, #8b1c22 100%))
+	+background-image(linear-gradient(bottom, #8b1c21 49.33%, #e36168 117.33%))
 .basket__price
 	+clr
 	margin-bottom: 4px
@@ -150,10 +150,30 @@ table
 			line-height: 26px
 			text-transform: uppercase
 			font-size: 15px
-			color: #555	
+			color: #555
+			&:hover
+				color: #fff
+				background: #9d2a30
+				+background-image(linear-gradient(bottom, #8b1c21 49.33%, #e36168 117.33%))
+		a.is-active
+			color: #fff
+			background: #9d2a30
+			+background-image(linear-gradient(bottom, #8b1c21 49.33%, #e36168 117.33%))
+		
 .sub-menu
 	height: 26px
+	line-height: 26px
 	background: #87888a 
+	li
+		float: left
+		a
+			display: block
+			padding-left: 24px
+			color: #fff
+			font-size: 13px
+			text-transform: uppercase
+			&:hover
+				color: $red  
 
 // footer
 .footer
@@ -218,18 +238,28 @@ table
 .l-container
 	position: relative
 	+clr
+.l-sidebar__menu
+	position: absolute
+	top: 120px
+	bottom: 0
+	left: 0
+	right: 0
+	+box-shadow(inset -12px -8px 30px -8px #ccc)	
 .sidebar
-	float: left
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
 	width: 185px
 	margin-right: 21px
 .l-content
-	float: left
+	float: right
 	width: 857px
 	padding-top: 7px
 	+box-shadow(8px -3px 30px -3px #ccc)
 .content
 	margin-bottom: 5px				
-.sidebar__menu
+.sidebar__options
 	margin-bottom: 22px
 	li
 		margin-bottom: 10px
@@ -311,8 +341,46 @@ table
 			color: $red
 		a.current
 			color: #929191		
-.navigation__pages
-	float: right				
+.pagination
+	float: right
+	margin-left: 25px
+	li
+		float: left
+		line-height: 18px
+		font: "Tahoma", sans-serif
+		font-size: 12px
+		color: #929191
+		span
+			padding-right: 4px
+		a
+			display: block
+			height: 18px
+			padding: 0 5px
+			+box
+			font-size: 14px
+			color: #929191
+			&:hover
+				color: $red
+		a.is-active
+			background: #9d1d2e
+			color: #fff
+.sidebar__menu
+	padding-left: 22px
+	li
+		height: 16px
+		font-size: 13px
+		padding-top: 10px
+		color: $red
+		text-transform: uppercase
+		cursor: pointer
+	.red-wine
+		border-right: 7px solid #922228
+	.white-wine
+		border-right: 7px solid #fce08b
+	.pink-wine
+		border-right: 7px solid #f69793
+	.champagne
+		border-right: 7px solid #fff6f2							 					
 
 		
 		

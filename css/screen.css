@@ -48,7 +48,7 @@ table { border-spacing: 0; border-collapse: collapse; }
 .basket { position: relative; float: right; margin: 64px 0 5px; min-width: 119px; height: 88px; background: #e7e7e7; }
 .basket:before { content: ""; position: absolute; top: 32px; left: -62px; background: url('../img/icons-s694288af43.png') 0 -237px no-repeat; width: 53px; height: 51px; }
 
-.basket__title { height: 27px; line-height: 27px; margin-bottom: 8px; text-align: center; text-transform: uppercase; color: white; background: #9d2a30; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e4676e), color-stop(100%, #8b1c22)); background-image: -webkit-linear-gradient(top, #e4676e 0%, #8b1c22 100%); background-image: -moz-linear-gradient(top, #e4676e 0%, #8b1c22 100%); background-image: -o-linear-gradient(top, #e4676e 0%, #8b1c22 100%); background-image: linear-gradient(top, #e4676e 0%, #8b1c22 100%); }
+.basket__title { height: 27px; line-height: 27px; margin-bottom: 8px; text-align: center; text-transform: uppercase; color: white; background: #9d2a30; background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(49.33%, #8b1c21), color-stop(117.33%, #e36168)); background-image: -webkit-linear-gradient(bottom, #8b1c21 49.33%, #e36168 117.33%); background-image: -moz-linear-gradient(bottom, #8b1c21 49.33%, #e36168 117.33%); background-image: -o-linear-gradient(bottom, #8b1c21 49.33%, #e36168 117.33%); background-image: linear-gradient(bottom, #8b1c21 49.33%, #e36168 117.33%); }
 
 .basket__price { margin-bottom: 4px; }
 .basket__price:before, .basket__price:after { content: ""; display: table; }
@@ -61,8 +61,13 @@ table { border-spacing: 0; border-collapse: collapse; }
 .main-menu { height: 26px; margin-bottom: 3px; background: #dadada; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #faf9f9), color-stop(100%, #bebdbd)); background-image: -webkit-linear-gradient(top, #faf9f9 0%, #bebdbd 100%); background-image: -moz-linear-gradient(top, #faf9f9 0%, #bebdbd 100%); background-image: -o-linear-gradient(top, #faf9f9 0%, #bebdbd 100%); background-image: linear-gradient(top, #faf9f9 0%, #bebdbd 100%); }
 .main-menu li { float: left; border-right: 3px solid #9d1d2e; }
 .main-menu li a { display: block; padding: 0 33px; line-height: 26px; text-transform: uppercase; font-size: 15px; color: #555555; }
+.main-menu li a:hover { color: white; background: #9d2a30; background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(49.33%, #8b1c21), color-stop(117.33%, #e36168)); background-image: -webkit-linear-gradient(bottom, #8b1c21 49.33%, #e36168 117.33%); background-image: -moz-linear-gradient(bottom, #8b1c21 49.33%, #e36168 117.33%); background-image: -o-linear-gradient(bottom, #8b1c21 49.33%, #e36168 117.33%); background-image: linear-gradient(bottom, #8b1c21 49.33%, #e36168 117.33%); }
+.main-menu li a.is-active { color: white; background: #9d2a30; background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(49.33%, #8b1c21), color-stop(117.33%, #e36168)); background-image: -webkit-linear-gradient(bottom, #8b1c21 49.33%, #e36168 117.33%); background-image: -moz-linear-gradient(bottom, #8b1c21 49.33%, #e36168 117.33%); background-image: -o-linear-gradient(bottom, #8b1c21 49.33%, #e36168 117.33%); background-image: linear-gradient(bottom, #8b1c21 49.33%, #e36168 117.33%); }
 
-.sub-menu { height: 26px; background: #87888a; }
+.sub-menu { height: 26px; line-height: 26px; background: #87888a; }
+.sub-menu li { float: left; }
+.sub-menu li a { display: block; padding-left: 24px; color: white; font-size: 13px; text-transform: uppercase; }
+.sub-menu li a:hover { color: #9d1c2f; }
 
 .footer { width: 1063px; height: 170px; margin: 0 auto; padding-top: 8px; -moz-box-sizing: border-box; box-sizing: border-box; border-top: 9px solid #9d1c2f; }
 .footer:before, .footer:after { content: ""; display: table; }
@@ -98,15 +103,17 @@ table { border-spacing: 0; border-collapse: collapse; }
 .l-container:before, .l-container:after { content: ""; display: table; }
 .l-container:after { clear: both; }
 
-.sidebar { float: left; width: 185px; margin-right: 21px; }
+.l-sidebar__menu { position: absolute; top: 120px; bottom: 0; left: 0; right: 0; -webkit-box-shadow: inset -12px -8px 30px -8px #cccccc; -moz-box-shadow: inset -12px -8px 30px -8px #cccccc; box-shadow: inset -12px -8px 30px -8px #cccccc; }
 
-.l-content { float: left; width: 857px; padding-top: 7px; -webkit-box-shadow: 8px -3px 30px -3px #cccccc; -moz-box-shadow: 8px -3px 30px -3px #cccccc; box-shadow: 8px -3px 30px -3px #cccccc; }
+.sidebar { position: absolute; top: 0; bottom: 0; left: 0; width: 185px; margin-right: 21px; }
+
+.l-content { float: right; width: 857px; padding-top: 7px; -webkit-box-shadow: 8px -3px 30px -3px #cccccc; -moz-box-shadow: 8px -3px 30px -3px #cccccc; box-shadow: 8px -3px 30px -3px #cccccc; }
 
 .content { margin-bottom: 5px; }
 
-.sidebar__menu { margin-bottom: 22px; }
-.sidebar__menu li { margin-bottom: 10px; }
-.sidebar__menu li a { display: block; height: 26px; padding: 0 22px; line-height: 26px; text-transform: uppercase; font-size: 15px; color: #9d1c2f; background: #dadada; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #faf9f9), color-stop(100%, #bebdbd)); background-image: -webkit-linear-gradient(top, #faf9f9 0%, #bebdbd 100%); background-image: -moz-linear-gradient(top, #faf9f9 0%, #bebdbd 100%); background-image: -o-linear-gradient(top, #faf9f9 0%, #bebdbd 100%); background-image: linear-gradient(top, #faf9f9 0%, #bebdbd 100%); }
+.sidebar__options { margin-bottom: 22px; }
+.sidebar__options li { margin-bottom: 10px; }
+.sidebar__options li a { display: block; height: 26px; padding: 0 22px; line-height: 26px; text-transform: uppercase; font-size: 15px; color: #9d1c2f; background: #dadada; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #faf9f9), color-stop(100%, #bebdbd)); background-image: -webkit-linear-gradient(top, #faf9f9 0%, #bebdbd 100%); background-image: -moz-linear-gradient(top, #faf9f9 0%, #bebdbd 100%); background-image: -o-linear-gradient(top, #faf9f9 0%, #bebdbd 100%); background-image: linear-gradient(top, #faf9f9 0%, #bebdbd 100%); }
 
 .l-search { position: relative; }
 
@@ -138,7 +145,19 @@ table { border-spacing: 0; border-collapse: collapse; }
 .navigation__map li a { font: "Tahoma", sans-serif; color: #9d1c2f; }
 .navigation__map li a.current { color: #929191; }
 
-.navigation__pages { float: right; }
+.pagination { float: right; margin-left: 25px; }
+.pagination li { float: left; line-height: 18px; font: "Tahoma", sans-serif; font-size: 12px; color: #929191; }
+.pagination li span { padding-right: 4px; }
+.pagination li a { display: block; height: 18px; padding: 0 5px; -moz-box-sizing: border-box; box-sizing: border-box; font-size: 14px; color: #929191; }
+.pagination li a:hover { color: #9d1c2f; }
+.pagination li a.is-active { background: #9d1d2e; color: white; }
+
+.sidebar__menu { padding-left: 22px; }
+.sidebar__menu li { height: 16px; font-size: 13px; padding-top: 10px; color: #9d1c2f; text-transform: uppercase; cursor: pointer; }
+.sidebar__menu .red-wine { border-right: 7px solid #922228; }
+.sidebar__menu .white-wine { border-right: 7px solid #fce08b; }
+.sidebar__menu .pink-wine { border-right: 7px solid #f69793; }
+.sidebar__menu .champagne { border-right: 7px solid #fff6f2; }
 
 .new { margin-left: 25px; }
 .new:before, .new:after { content: ""; display: table; }
@@ -159,22 +178,25 @@ table { border-spacing: 0; border-collapse: collapse; }
 
 .new__wine { position: absolute; top: 10px; left: -61px; }
 
-.best-sell .h2 { margin-left: 24px; }
+.product-list .h2 { margin-left: 24px; }
 
-.best-sell__row { margin-top: 7px; padding-top: 34px; border-top: 2px dotted #6b6f72; }
-.best-sell__row:before, .best-sell__row:after { content: ""; display: table; }
-.best-sell__row:after { clear: both; }
+.product-list__row { padding-top: 7px; margin-top: 7px; border-top: 2px dotted #6b6f72; }
+.product-list__row:before, .product-list__row:after { content: ""; display: table; }
+.product-list__row:after { clear: both; }
+.product-list__row:first-child { border-top: none; }
 
-.best-sell__row_top { padding-top: 7px; }
+.product-list__row_mod { padding-top: 34px; }
 
-.bestseller { position: relative; width: 33.3%; float: left; padding: 16px 8px 8px 88px; -moz-box-sizing: border-box; box-sizing: border-box; border-left: 2px dotted #6b6f72; }
-.bestseller:first-child { border-left: none; }
+.product-list__row_top { border-top: 2px dotted #6b6f72 !important; }
 
-.bestseller__link { font: italic 18px Times New Poman, sans-serif; color: #9d1c2f; }
+.product { position: relative; width: 33.3%; float: left; padding: 16px 8px 8px 88px; -moz-box-sizing: border-box; box-sizing: border-box; border-left: 2px dotted #6b6f72; }
+.product:first-child { border-left: none; }
 
-.bestseller__text { font-size: 12px; }
+.product__link { font: italic 18px Times New Poman, sans-serif; color: #9d1c2f; }
 
-.bestseller__img { position: absolute; top: 56px; left: 10px; z-index: 2; }
+.product__text { font-size: 12px; }
 
-.price { position: relative; left: -54px; height: 27px; line-height: 27px; padding-right: 34px; text-align: right; background: #9d2a30; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e4676e), color-stop(100%, #8b1c22)); background-image: -webkit-linear-gradient(top, #e4676e 0%, #8b1c22 100%); background-image: -moz-linear-gradient(top, #e4676e 0%, #8b1c22 100%); background-image: -o-linear-gradient(top, #e4676e 0%, #8b1c22 100%); background-image: linear-gradient(top, #e4676e 0%, #8b1c22 100%); color: white; font-family: Tahoma, sans-serif; }
+.product__img { position: absolute; top: 56px; left: 10px; z-index: 2; }
+
+.price { position: relative; left: -54px; height: 27px; line-height: 27px; padding-right: 34px; text-align: right; background: #9d2a30; background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(49.33%, #8b1c21), color-stop(117.33%, #e36168)); background-image: -webkit-linear-gradient(bottom, #8b1c21 49.33%, #e36168 117.33%); background-image: -moz-linear-gradient(bottom, #8b1c21 49.33%, #e36168 117.33%); background-image: -o-linear-gradient(bottom, #8b1c21 49.33%, #e36168 117.33%); background-image: linear-gradient(bottom, #8b1c21 49.33%, #e36168 117.33%); color: white; font-family: Tahoma, sans-serif; }
 .price:after { content: ""; position: absolute; top: 2px; right: 7px; background: url('../img/icons-s694288af43.png') 0 -489px no-repeat; width: 22px; height: 22px; }

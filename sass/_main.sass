@@ -24,17 +24,21 @@
 	position: absolute
 	top: 10px
 	left: -61px
-.best-sell
+.product-list
 	.h2
 		margin-left: 24px
-.best-sell__row
+.product-list__row
+	padding-top: 7px
 	margin-top: 7px
-	padding-top: 34px
 	border-top: 2px dotted #6b6f72
 	+clr
-.best-sell__row_top
-	padding-top: 7px						
-.bestseller
+	&:first-child
+		border-top: none
+.product-list__row_mod
+	padding-top: 34px
+.product-list__row_top
+	border-top: 2px dotted #6b6f72!important							
+.product
 	position: relative
 	width: 33.3%
 	float: left
@@ -43,12 +47,12 @@
 	border-left: 2px dotted #6b6f72
 	&:first-child
 		border-left: none
-.bestseller__link
+.product__link
 	font: italic 18px Times New Poman, sans-serif
 	color: $red
-.bestseller__text
+.product__text
 	font-size: 12px
-.bestseller__img
+.product__img
 	position: absolute
 	top: 56px
 	left: 10px
@@ -61,7 +65,7 @@
 	padding-right: 34px
 	text-align: right
 	background: #9d2a30 
-	+background-image(linear-gradient(top, #e4676e 0%, #8b1c22 100%))
+	+background-image(linear-gradient(bottom, #8b1c21 49.33%, #e36168 117.33%))
 	color: #fff
 	font-family: Tahoma, sans-serif
 	&:after
