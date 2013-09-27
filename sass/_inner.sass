@@ -7,4 +7,105 @@
 	font-size: 24px
 	font-weight: normal
 	text-transform: uppercase
-	color: $red	
+	color: $red
+.product
+	margin-top: 12px		
+.product__about
+	+clr
+.product__img
+	float: left
+	width: 280px
+	text-align: center
+.product__text
+	float: right
+	width: 577px
+.product__info
+	+box
+	+clr
+	border-top: 2px dotted #6b6f72	
+.product__left
+	float: left
+	width: 396px
+	padding: 5px 5px 0 0
+	+box
+	border-right: 2px dotted #6b6f72
+.product__right
+	float: right
+	width: 181px
+	margin-left: -2px
+	border-left: 2px dotted #6b6f72
+.about
+	font: 12px Tahoma, sans-serif
+	margin: 10px 0 0px
+	p
+		margin-bottom: 4px
+		text-align: justify
+.product__price
+	margin: 40px 0
+	+clr
+.product__money
+	padding-top: 10px
+	width: 154px
+	margin-right: 5px
+	display: inline-block
+	vertical-align: top
+	p
+		font-style: italic
+		margin-top: 7px
+		padding-left: 2px
+		font-size: 11px
+.product-buy
+	display: block
+	height: 32px
+	line-height: 32px
+	text-align: center
+	font: italic 24px Arial, sans-serif
+	color: #fff
+	background: #9d2a30
+	+background-image(linear-gradient(bottom, #8b1c21 49.33%, #e36168 117.33%))
+.product__basket
+	display: inline-block
+	i
+		display: block
+		+s(basket)
+.info-block
+	padding: 0 4px
+	img
+		width: 100%
+	p
+		padding-left: 2px
+		font: italic 12px Times New Roman, sans-serif
+		color: #87888a
+
+// comments
+.comments
+	margin-bottom: 50px
+	padding-top: 2px	
+	border-top: 2px dotted #6b6f72
+.comments__title
+	font: italic 18px Times New Roman, sans-serif
+	color: $red
+	margin-bottom: 5px															
+.comm
+	+clr
+	padding: 5px 0 10px
+	border-top: 2px dotted #6b6f72
+	font: italic 14px Times New Roman, sans-serif
+	color: #87888a
+	&:first-child
+		border-top: none
+.comm__name
+	float: left
+	width: 145px
+	font-size: 18px
+	
+.comm__text
+	float: left
+	width: 530px
+.comm__mark
+	float: right
+	width: 182px
+	text-align: center
+	font-size: 18px
+	color: $red		
+	
