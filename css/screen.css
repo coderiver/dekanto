@@ -279,3 +279,15 @@ img.post__wine { position: absolute; top: 10px; left: -61px; width: auto; }
 .comm__text { float: left; width: 530px; }
 
 .comm__mark { float: right; width: 182px; text-align: center; font-size: 18px; color: #9d1c2f; }
+
+.wine { padding: 0 0 5px 26px; border-bottom: 2px dotted #6b6f72; }
+
+.wine__title { font-family: Tahoma, sans-serif; }
+
+.wine__about { padding-top: 20px; font-size: 10px; font-weight: bold; text-align: justify; }
+.wine__about:before, .wine__about:after { content: ""; display: table; }
+.wine__about:after { clear: both; }
+.wine__about img { float: right; width: 260px; margin-left: 25px; }
+
+.wine__text { float: left; width: 546px; }
+.wine__text p { text-indent: 36px; }
