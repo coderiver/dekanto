@@ -1,9 +1,12 @@
 @import "base"
 //styles for main page
-.new
+.post
 	+clr
 	margin-left: 25px
-.new__col
+	border-top: 2px dotted #6b6f72
+	&:first-child
+		border-top: none
+.post__col
 	width: 50%
 	float: left
 	+clr
@@ -11,21 +14,24 @@
 		margin: 20px 0 10px 	
 .wine-about
 	font-size: 10px
-.new__text
+.post__text
 	font: 14px Tahoma, sans-serif
 .wine-about__kind
 	margin-top: 10px
-.new__img
+.post__img
 	position: relative
 	float: right
 	p
 		padding: 0 10px 0 43px
 		font: italic 12px 'Times New Poman', sans-serif
 		color: #87888a
-.new__wine
+	img
+		max-width: 416px	
+img.post__wine
 	position: absolute
 	top: 10px
 	left: -61px
+	width: auto 
 .product-list
 	.h2
 		margin-left: 24px

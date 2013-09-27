@@ -160,15 +160,16 @@ table { border-spacing: 0; border-collapse: collapse; }
 
 .sidebar__menu { padding-left: 22px; }
 .sidebar__menu li { font-size: 13px; color: #9d1c2f; text-transform: uppercase; }
-.sidebar__menu li p { padding-top: 10px; cursor: pointer; }
+.sidebar__menu li p { padding: 10px 10px 0 0; cursor: pointer; }
+.sidebar__menu li p.is-active { border-right: 7px solid #922228; border-bottom: 2px solid #922228; -webkit-box-shadow: 0px 4px 4px 0px #cccccc; -moz-box-shadow: 0px 4px 4px 0px #cccccc; box-shadow: 0px 4px 4px 0px #cccccc; }
 .sidebar__menu .red-wine p { border-right: 7px solid #922228; }
-.sidebar__menu .red-wine p.is-active { border-bottom: 2px solid #922228; -webkit-box-shadow: 0px 4px 4px 0px #cccccc; -moz-box-shadow: 0px 4px 4px 0px #cccccc; box-shadow: 0px 4px 4px 0px #cccccc; }
+.sidebar__menu .red-wine p.is-active { border-bottom: 2px solid #922228; border-right: 7px solid #922228; -webkit-box-shadow: 0px 4px 4px 0px #cccccc; -moz-box-shadow: 0px 4px 4px 0px #cccccc; box-shadow: 0px 4px 4px 0px #cccccc; }
 .sidebar__menu .white-wine p { border-right: 7px solid #fce08b; }
-.sidebar__menu .white-wine p.is-active { border-bottom: 2px solid #fce08b; -webkit-box-shadow: 0px 4px 4px 0px #cccccc; -moz-box-shadow: 0px 4px 4px 0px #cccccc; box-shadow: 0px 4px 4px 0px #cccccc; }
+.sidebar__menu .white-wine p.is-active { border-bottom: 2px solid #fce08b; border-right: 7px solid #fce08b; -webkit-box-shadow: 0px 4px 4px 0px #cccccc; -moz-box-shadow: 0px 4px 4px 0px #cccccc; box-shadow: 0px 4px 4px 0px #cccccc; }
 .sidebar__menu .pink-wine p { border-right: 7px solid #f69793; }
-.sidebar__menu .pink-wine p.is-active { border-bottom: 2px solid #f69793; -webkit-box-shadow: 0px 4px 4px 0px #cccccc; -moz-box-shadow: 0px 4px 4px 0px #cccccc; box-shadow: 0px 4px 4px 0px #cccccc; }
+.sidebar__menu .pink-wine p.is-active { border-bottom: 2px solid #f69793; border-right: 7px solid #f69793; -webkit-box-shadow: 0px 4px 4px 0px #cccccc; -moz-box-shadow: 0px 4px 4px 0px #cccccc; box-shadow: 0px 4px 4px 0px #cccccc; }
 .sidebar__menu .champagne p { border-right: 7px solid #fff6f2; }
-.sidebar__menu .champagne p.is-active { border-bottom: 2px solid #fff6f2; -webkit-box-shadow: 0px 4px 4px 0px #cccccc; -moz-box-shadow: 0px 4px 4px 0px #cccccc; box-shadow: 0px 4px 4px 0px #cccccc; }
+.sidebar__menu .champagne p.is-active { border-bottom: 2px solid #fff6f2; border-right: 7px solid #fff6f2; -webkit-box-shadow: 0px 4px 4px 0px #cccccc; -moz-box-shadow: 0px 4px 4px 0px #cccccc; box-shadow: 0px 4px 4px 0px #cccccc; }
 
 .sidebar__sub-menu { padding: 7px 0 4px 19px; }
 .sidebar__sub-menu li { padding-bottom: 2px; font-size: 12px; color: #7d7d7d; text-transform: none; font-family: "Tahoma", sans-serif; cursor: pointer; }
@@ -177,25 +178,27 @@ table { border-spacing: 0; border-collapse: collapse; }
 
 .sidebar__l2-menu { padding-left: 10px; }
 
-.new { margin-left: 25px; }
-.new:before, .new:after { content: ""; display: table; }
-.new:after { clear: both; }
+.post { margin-left: 25px; border-top: 2px dotted #6b6f72; }
+.post:before, .post:after { content: ""; display: table; }
+.post:after { clear: both; }
+.post:first-child { border-top: none; }
 
-.new__col { width: 50%; float: left; }
-.new__col:before, .new__col:after { content: ""; display: table; }
-.new__col:after { clear: both; }
-.new__col .h1 { margin: 20px 0 10px; }
+.post__col { width: 50%; float: left; }
+.post__col:before, .post__col:after { content: ""; display: table; }
+.post__col:after { clear: both; }
+.post__col .h1 { margin: 20px 0 10px; }
 
 .wine-about { font-size: 10px; }
 
-.new__text { font: 14px Tahoma, sans-serif; }
+.post__text { font: 14px Tahoma, sans-serif; }
 
 .wine-about__kind { margin-top: 10px; }
 
-.new__img { position: relative; float: right; }
-.new__img p { padding: 0 10px 0 43px; font: italic 12px "Times New Poman", sans-serif; color: #87888a; }
+.post__img { position: relative; float: right; }
+.post__img p { padding: 0 10px 0 43px; font: italic 12px "Times New Poman", sans-serif; color: #87888a; }
+.post__img img { max-width: 416px; }
 
-.new__wine { position: absolute; top: 10px; left: -61px; }
+img.post__wine { position: absolute; top: 10px; left: -61px; width: auto; }
 
 .product-list .h2 { margin-left: 24px; }
 
