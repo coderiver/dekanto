@@ -129,7 +129,78 @@
 	float: left
 	width: 546px
 	p
-		text-indent: 36px		 	
-	
+		text-indent: 36px
+		
+// registration		
+.sign-in
+	padding: 0 194px 14px 26px
+	+box
+	border-bottom: 2px dotted #6b6f72				 	
+.form__item
+	margin-top: 15px
+	+clr
+	+no-sel	
+	p
+		float: left
+		text-align: right
+		+box
+		padding-right: 20px
+		width: 50%
+		line-height: 23px
+		font-family: Tahoma, sans-serif
+		color: #555
+.form__input
+	float: right
+	width: 50%
+.l-checkbox
+	position: relative 
+	display: inline-block
+	margin-right: 19px 
+	input
+		+opacity(0)
+	input + span
+		position: absolute
+		top: 0px
+		left: 0px
+		width: 17px
+		height: 17px
+		+box
+		border: 1px solid #953c36
+	input:checked + span
+		background: url(../img/checkbox.png) -2px 0px no-repeat 		
+.checkbox__text
+	display: inline-block
+	padding-left: 7px
+.form__submit
+	text-align: right
+	margin-top: 28px
+.registration
+	padding: 8px 194px 14px 26px
+	+box
+	+clr			 
+.registration__col
+	float: right
+	width: 45%
+	padding-top: 20px
+	.l-checkbox
+		margin-left: 143px
+.registration__confirm
+	clear: both
+	margin: 0 0 0 207px
+	padding-top: 20px
+	+no-sel
+	.l-checkbox
+		+clr
+	input
+		float: left
+	.checkbox__text
+		float: left
+		width: 80%
+		font-size: 10px 
+			
+				
+
+			
+			
 
 	

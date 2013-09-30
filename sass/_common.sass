@@ -66,7 +66,22 @@ table
 	font: italic 18px Times New Roman, sans-serif
 	color: $red
 .h3_grey
-	color: #87888a			
+	color: #87888a
+.input
+	height: 23px
+	+box
+	width: 100%
+	padding: 0 5px 
+	border: 1px solid #953c36
+.submit
+	width: 120px
+	height: 26px
+	background: #9d2a30 
+	+background-image(linear-gradient(bottom, #8b1c21 49.33%, #e36168 117.33%))
+	font-family: Tahoma, sans-serif
+	text-transform: uppercase
+	color: #fff
+	cursor: pointer					
 //header
 .header
 	position: relative
@@ -240,25 +255,16 @@ table
 .l-container
 	position: relative
 	+clr
-.l-sidebar__menu
-	position: absolute
-	top: 120px
-	bottom: 0
-	left: 0
-	right: 0
-	+box-shadow(inset -12px -8px 30px -8px #ccc)	
+	+box-shadow(8px -3px 30px -3px #ccc)
+	background: url(../img/bg.png) -37px 0 repeat-y 	
 .sidebar
-	position: absolute
-	top: 0
-	bottom: 0
-	left: 0
+	float: left
 	width: 185px
-	margin-right: 21px
 .l-content
 	float: right
 	width: 857px
 	padding-top: 7px
-	+box-shadow(8px -3px 30px -3px #ccc)
+	padding-left: 21px
 .content
 	margin-bottom: 5px				
 .sidebar__options
@@ -275,6 +281,14 @@ table
 			color: $red
 			background: #dadada 
 			+background-image(linear-gradient(top, #faf9f9 0%, #bebdbd 100%))
+			&:hover
+				color: #fff
+				background: #9d2a30
+				+background-image(linear-gradient(bottom, #8b1c21 49.33%, #e36168 117.33%))
+		.is-active
+			color: #fff
+			background: #9d2a30
+			+background-image(linear-gradient(bottom, #8b1c21 49.33%, #e36168 117.33%))	
 .l-search
 	position: relative
 .search
@@ -300,8 +314,6 @@ table
 		top: 6px
 		lefT: 8px
 		+s(search)
-.sidebar__article-list
-	+box-shadow(inset -8px -3px 30px -3px #cccccc)
 .sidebar__article
 	+box
 	border: 2px dotted #6b6f72
